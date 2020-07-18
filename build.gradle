@@ -27,7 +27,7 @@ dependencies {
 publishing {
     repositories {
         maven {
-            url 'https://maven.icosillion.com/artifactory/open-source/'
+            url 'https://maven.cosmos-ink.net/'
             credentials {
                 username project.properties.containsKey("deploymentUser") ? project.properties.get("deploymentUser") : ""
                 password project.properties.containsKey("deploymentPassword") ? project.properties.get("deploymentPassword") : ""
