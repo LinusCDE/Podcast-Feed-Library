@@ -16,16 +16,6 @@ public class DateUtilsTest {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss Z", Locale.US);
 
     @Test
-    public void parsesStandardDateFormats() {
-        String dateTime = "Tue, 03 March 2009 15:00:00 -0000";
-
-        Date date = DateUtils.stringToDate(dateTime);
-
-        assertNotNull(date);
-        assertEquals("Tue, 03 Mar 2009 15:00:00 +0000", sdf.format(date));
-    }
-
-    @Test
     public void parsesNonStandardDateFormats() {
         try {
             assertEquals(
